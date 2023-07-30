@@ -4,12 +4,12 @@
   "description": "",
   "main": "funcao.js",
   "scripts": {
-    "test": "node importandoFuncao.js --name Samuel --secondName Henrique"
+    bla: "node importandoFuncao.js --name samuel --secondName henrique"
   },
   "keywords": [],
-  "author": "",
+  "author": "Samuel",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "cfonts": "^3.2.0"
   }
 }
