@@ -15,6 +15,6 @@ PARA TRAZER OS MODULOS DE TERCEIRO NOVAMENTE, BASTA USAR npm install, POIS AS DE
 
 CRIANDO E RODANDO SCRIPTS NO package.json
 ONDE TEM O OBJETO script no package.jso BASTA INSERIR O ARQUIVO JS E USAR
-npm run nome_da_chave_do_objeto
+npm run nome_da_chave_do_objeto que está no script package.json
 
 INSTALANDO DEPENDENCIAS GLOBAIS
