@@ -1,12 +1,32 @@
-// Função personalizada para processar a entrada do usuário
+/* process standard output write - saída padrão do processo - FUNÇÃO PARA ESCREVER DADOS NA SAÍDA PADRAO*/
 
-  
-  // Ouvinte para o evento "data" do stdin
-  process.stdin.on('data', processarEntrada = (input) => {
-    const numero = parseInt(input.toString().trim());
-    const resultado = numero * 2;
-    console.log(`O dobro do número digitado é: ${resultado}`);
-    process.exit(); // Encerra o programa após processar a entrada
-  });
-  
-  process.stdout.write("Digite um número:");
+
+const questions = [
+    "O que você aprendeu hoje? ", 
+    "O que te deixou aborrecido? E o que você pode fazer para melhorar? ",
+    "O que te deixou feliz hoje? ",
+    "Quantas pessoas você ajudou hoje? "
+]
+
+const ask = (index = 0) => {
+    process.stdout.write(questions[index]);
+}
+const answers = [];
+
+
+    process.stdin.on("data", data =>{
+      answers.push(data.toString().trim() + '\n') 
+      
+    if(answers.length < questions.length){
+        ask(answers.length)
+    }else{
+        console.log(answers)
+        process.exit()
+    }
+    });
+    
+
+
+
+
+ask();
