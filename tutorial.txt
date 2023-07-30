@@ -47,3 +47,6 @@ npm upgrade
 
 ATUALIZA PARA A VERSAO MAIS RECENTE
 npm i moment@latest
+
+REMOVE PACOTE
+npm uninstall <package-name>
