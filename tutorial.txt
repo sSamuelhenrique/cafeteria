@@ -8,6 +8,7 @@ npm install nome_do_modulo_de_terceiro
 
 FAZ COM QUE EU UTILIZE APENAS O MODULO QUANDO TIVER EM UM AMBIENTE DE DESENVOLVIMENTO
 npm i (install) nome_do_modulo_de_terceiro -D
+npm update
 
 **NAO MANDA A PASTA node_modules PARA O REPOSITORIO. CRIE UM ARQUIVO gitignore E ADICIONE node_modules/ ADICIONE E COMMIT APENAS O ARQUIVO .gitignore
 PARA TRAZER OS MODULOS DE TERCEIRO NOVAMENTE, BASTA USAR npm install, POIS AS DEPENDENCIAS JA ESTAO INSTALADAS
@@ -18,3 +19,31 @@ ONDE TEM O OBJETO script no package.jso BASTA INSERIR O ARQUIVO JS E USAR
 npm run nome_da_chave_do_objeto que está no script package.json
 
 INSTALANDO DEPENDENCIAS GLOBAIS
+npm install <package-name> -g 
+ISSO QUER DIZER QUE ESSE PACOTE SERÁ INSTALADO NO DIRETORIO GLOBAL DO NODE.JS, PERMITINDO QUE ESSES PACOTES SEJA UTILIZADOS EM QUALQUER PROJETO NODE.JS
+DO MEU COMPUTADOR
+npm root -g VERIFICA ONDE É ESSE DIRETORIO GLOBAL DO NODE.JS
+npm uninstall <package-name> -g DESINSTALA O PACOTE DE MANEIRA GLOBAL
+
+GERENCIANDO VERSÕES DAS DEPENDENCIAS (MUDA A VERSAO DOS PACOTES INSTALADOS NO PROJETO)
+npm install moment 
+package.js: 
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+  major.minor.patch
+  patch: está arrumando algum bug que possa existir nesse pacote
+  minor: está fazendo alterações nesse pacote
+  major: versao do pacote
+
+MUDA DE VERSAO 
+npm install moment@1.5.1
+
+MOSTRA VERSÕES
+npm outdated
+
+ATUALIZA PARA A VERSÃO MAIS DESEJADA
+npm upgrade
+
+ATUALIZA PARA A VERSAO MAIS RECENTE
+npm i moment@latest

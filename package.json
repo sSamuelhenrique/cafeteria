@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "cfonts": "^3.2.0"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
   }
 }
