@@ -1,7 +1,7 @@
-i/* importando função do arquivo funcao.js */
+/* importando função do arquivo funcao.js */
 const getFlag = require('./funcao');
 /* quando imprimo isso a função é executada passando a string --name como argumento pra função */
-console.log(`Olá ${getFlag('--name')}`)
+console.log(`Olá ${getFlag('--name')} ${getFlag('--secondName')}`)
 
 
 /* ENTAO A FUNÇÃO É EXECUTADA E DENTRO DA CONSTANTE index É SALVO O ÍNDICE + 1 ONDE O ARGUMENTO FOI PASSADO  */
