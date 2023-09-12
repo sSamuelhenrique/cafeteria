@@ -1,11 +1,22 @@
-const myObject = {color: "blue", age: 21, myfunction: function Person (name, lastName){
+/* const myObject = {color: "blue", age: 21, myfunction: function Person (name, lastName){
     this.name = name;
     this.lastName = lastName;
 
 }}
+
 const { myfunction } = myObject;
-const person1 = new myfunction('Samuel', 'Henrique');
-console.log(person1);
+const person1 = new myfunction('João', 'Silva');
+console.log(person1); */
+
+/* class Person{
+    constructor(name, lastName){
+        this.name = name;
+        this.lastName = lastName
+    }
+}
+
+const person = new Person('Samuel', 'Henrique');
+console.log(person) */
 /* function Person (name, lastName){
     this.name = name;
     this.lastName = lastName;
