@@ -1,3 +1,4 @@
+/* ESTILOS GLOBAIS */
 *{
     margin: 0px;
     padding: 0px;
@@ -52,16 +53,27 @@ header{
     text-shadow: 2px 5px 2px black;
     font-weight: bold;
 }
+button{
+    background-color: transparent;
+    border: none;
+}
+/* 1 secao - menu */
+button, .menu, .open, .unordered-list-mobile{
+    display:  none;
+}
+
 
 /* 2 section */
 .first-img-parallax{
     background-image: url(/assets/parallax-imagem1.png);
-    width: 100%;
-    height: 100vh;
-   
+    
     display: flex;
     justify-content: center;
     align-items: center
+}
+.first-img-parallax, .fourth-img-parallax, .fifth-img-parallax{
+    width: 100%;
+    height: 100vh;
 }
 .banner{
     border-top: 2px solid rgb(255, 255, 255);
@@ -79,7 +91,7 @@ header{
 }
 
 
-/* 3 secao */
+/* seções 3, 5, 7 */
 .section-infos{
     width: 100%;
     background-color: #fff;
@@ -96,36 +108,120 @@ header{
 }
 .infos p{
     font-family: 'Lato', sans-serif;
-    width: calc(100% - 30px);
-    padding: 0px 15px;
+    width: 100%;
+    padding: 0px 25px;
     letter-spacing: 1px;
     color: #666;
     line-height: 34px;
-  
 }
 
 
 /* 4 secao */
 .second-img-parallax{
     background-image: url(../assets/parallax-imagem2.jpg);
+}
+/* 6 secao */
+.third-img-parallax{
+    background-image: url(/assets/parallax-imagem3.jpg)
+}
+/* efeitos globais 4 e 6 secao */
+
+.second-img-parallax, .third-img-parallax{
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.second-img-parallax h3{
+.second-img-parallax h3, .third-img-parallax h3{
+    background-color: var(--colorFirst);
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 5px 0px;
+    max-width: 400px;
+    width: calc(100% - 5px);
+    text-align: center;
+}
 
+
+/* 8 SECAO */
+.fourth-img-parallax{
+    background-image: url(/assets/parallax-imagem4.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
-button{
-    background-color: transparent;
-    border: none;
+.fourth-img-parallax>div iframe{
+    width: calc(100% - 6px);
+    margin: 0px 3px;
+    
 }
-/* 1 secao - menu */
-button, .menu, .open, .unordered-list-mobile{
-  /*   visibility: hidden; */
-    display:  none;
+.fourth-img-parallax h2{
+    background-color: var(--colorFirst);
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    max-width: 500px;
+    width: calc(100% - 10px);
+    padding: 5px 0px;
+}
+.container-contacts{
+    background-color: var(--colorFirst);
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    padding: 5px 0px;
+    max-width: 500px;
+    width: calc(100% - 10px)
+   
+}
+.container-contacts p{
+    text-shadow: 3px 5px 5px  black;
+    line-height: 36px;
 }
 
+
+/* 9 secao */
+.fifth-img-parallax{
+    background-image: url(/assets/parallax-imagem5.jpg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.fifth-img-parallax h2{
+    letter-spacing: 8px;
+    width: calc(100% - 10px);   
+}
+.container-list{
+    max-width: 768px;
+    width: calc(100% - 10px)
+}
+.schedule-list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ul li h3{
+    flex: 0 1 90px;
+    text-align: left;
+}
+ul li div{
+    flex: 1 1 90px;
+    background-color: white;
+    height: 1px;
+    margin: 0px 5px;
+}
+ul li p, span{
+    text-align: right;
+    flex: 0 1 90px;
+}
 @media (max-width: 730px){
     button, .menu{
       /*   visibility: visible; */
@@ -163,5 +259,17 @@ button, .menu, .open, .unordered-list-mobile{
 @media(max-width: 467px){
     .banner h1{
         font-size: 1.8rem;
+    }
+}
+@media (max-height: 667px ){
+    .container-contacts p{
+        font-size: 1rem;
+    }
+    /* .fourth-img-parallax .iframis{
+        height: 100%;
+    } */
+    .iframis iframe{
+        height: 50vh
+        
     }
 }
